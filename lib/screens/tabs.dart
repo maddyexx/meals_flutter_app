@@ -43,6 +43,9 @@ class _TabsScreenState extends ConsumerState<TabsScreen> {
               ),
         ),
       );
+    } else {
+      Navigator.of(context)
+          .push(MaterialPageRoute(builder: (ctx) => const TabsScreen()));
     }
   }
 
